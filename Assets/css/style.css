@@ -1,0 +1,218 @@
+/* Estilos personalizados */
+
+body {
+    padding: 20px 0 20px 0;
+    /*Espacio para la barra de navegación y el footer*/
+    background-color: #141432;
+    /* Color de fondo principal */
+    color: #f8f9fa;
+    /* Color del texto para buen contraste */
+    font-family: Arial, sans-serif;
+    /* Fuente para todo el sitio */
+}
+
+header {
+    background: #1c1c3c;
+    /* Color de fondo del encabezado */
+    padding: 3rem 1rem;
+    color: #f8f9fa;
+    /* Color del texto en el encabezado */
+}
+
+/* Estilo del contenedor */
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    /* Fuente tipo máquina de escribir */
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    /* Evita el salto de línea automático */
+    overflow: hidden;
+    /* Oculta el texto que desborda el contenedor */
+}
+
+/* Estilo del texto */
+.text {
+    color: transparent;
+    border-bottom: 4px solid black;
+    /* Cursor parpadeante */
+    padding-right: 5px;
+    /* Espacio entre el texto y el cursor */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    /* Animaciones */
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        /* border-color: #149414; */
+        border-color: #11e956;
+    }
+}
+
+#titulo {
+    /* color: #149414; */
+    color: #11e956;
+}
+
+h2 {
+    padding-top: 15px;
+}
+
+.jumbotron {
+    background: linear-gradient(to bottom right, #1c1c3c, blue);
+    /* Color de fondo del jumbotron */
+    color: #f8f9fa;
+    /* Color del texto en el jumbotron */
+}
+
+/* .navbar {
+    background-color: green;
+    /* Color de fondo de la barra de navegación */
+/* } */ 
+.nav-item{
+    margin: 0px 5px 0px 5px;
+}
+
+ .navbar-brand{
+    height: 100%;
+ }
+
+.navbar .nav-link {
+    /* text-align: center; */
+    color: #f8f9fa; 
+    background-color:#0404e8;
+    padding: 10px;
+    border: 2px;
+    border-radius: 10px;
+    /* Color del texto en la barra de navegación */
+ } 
+
+
+.nav-link:hover {
+    color: white;    /* Color del texto al pasar el mouse */
+    background: linear-gradient(to bottom right, #1c1c3c, blue);
+    /* border: 3px; */
+    border-radius: 10px;
+}
+
+#about {
+    background-color: #1c1c3c;
+}
+
+#contact {
+    background-color: #1c1c3c;
+}
+
+#projects {
+    background-color: #1c1c3c;
+}
+
+.card {
+    background-color: #1c1c3c;
+    /* Color de fondo de las tarjetas */
+    color: #f8f9fa;
+    /* Color del texto en las tarjetas */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit:cover;
+}
+
+.card-img-top:hover{
+    transform: scale(1.01);
+    object-fit: fill;
+}
+
+
+.card-body {
+    background-color: #2c2c4c;
+    /* Color de fondo del cuerpo de la tarjeta */
+}
+
+footer {
+    background: #1c1c3c;
+    /* Color de fondo del pie de página */
+    color: #f8f9fa;
+    /* Color del texto en el pie de página */
+}
+
+form .form-control {
+    background-color: #2c2c4c;
+    /* Color de fondo de los campos del formulario */
+    color: #f8f9fa;
+    /* Color del texto en los campos del formulario */
+}
+
+form .form-control::placeholder {
+    color: #b0b0b0;
+    /* Color del texto del placeholder */
+}
+
+.icons-Redes {
+    height: 40px;
+}
+
+.icons-Redes:hover {
+    transform: scale(1.5);
+}
+
+/* .imgPortada {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* Estilo del contenedor */
+.containerImg {
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+    position: relative;
+    /* Asegura que la imagen se mueva dentro del contenedor */
+    width: 100%;
+    /* Ancho del contenedor, ajusta según sea necesario */
+    height: 100%;
+    /* Altura del contenedor, ajusta según sea necesario */
+}
+/* .containerJ{
+    display: flex;
+    justify-content:space-around;
+} */
+/* Estilo de la imagen en movimiento */
+.imgPortada {
+    height: 80vh;
+    width: 100%;
+    animation: move 5s linear infinite;
+    /* Aplica la animación */
+}
+
+/* Definición de la animación */
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+        /* Comienza fuera de la vista por la izquierda */
+    }
+
+    100% {
+        transform: translateX(10%);
+        /* Mueve la imagen fuera de la vista por la derecha */
+    }
+}

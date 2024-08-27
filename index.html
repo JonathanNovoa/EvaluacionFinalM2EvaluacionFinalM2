@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Jonathan Novoa</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/icons/favicon-16x16.png">
+    <link href="./Assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-prymary bg-light">
+        <a class="navbar-brand" href="#portadaJ"><img src="./Assets/img/icons/favicon-32x32.png" alt=""><span
+                class="text">..</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">Sobre Mí <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header id="portadaJ" class="jumbotron text-center">
+        <div class="col-11">
+            <div class="row d-flex justify-content-around">
+                <div class="align-content-center col-8">
+                    <h1 id="titulo" class="display-4"></h1>
+                    <p class="lead">Desarrollador Web Full Stack Junior<span class="text">..<br></span>Soy un Desarrollador Full Stack
+                        Junior con experiencia en el desarrollo de aplicaciones web completas. Manejo tecnologías
+                        frontend como HTML, CSS y JavaScript, así como frameworks modernos como React. En el
+                        backend, trabajo con Node.js y Express.</p>
+                    <a class="btn btn-primary btn-lg" href="#about" role="button">Más sobre mí</a>
+                </div>
+                <div class="containerImg align-content-center col-4">
+                    <img class="imgPortada" src="./Assets/img/icons/programador-trabajando.png"
+                        alt="Programador trabajando animacion">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="typewriter">
+        <span class="text">..</span>
+    </div> -->
+    <!-- Sección sobre mí -->
+    <section id="about" class="container col-12 text-center my-5">
+        <h2 class="text-center">Sobre Mí</h2>
+        <div class="row justify-content-center">
+            <p class="parrafoCard col-10 text-left mb-4">Soy un estudiante apasionado del desarrollo web, actualmente
+                inmerso en un bootcamp de Full Stack Java. Mi
+                formación me ha proporcionado un sólido dominio de tecnologías clave como HTML, CSS, y JavaScript, que
+                utilizo para crear interfaces web atractivas y funcionales. Además, mi enfoque en Java me permite
+                desarrollar aplicaciones robustas y eficientes en el lado del servidor.
+
+                Estoy entusiasmado por combinar mis habilidades en desarrollo front-end y back-end para construir
+                soluciones
+                integrales y de alto rendimiento. Mi objetivo es seguir creciendo en el campo del desarrollo web y
+                contribuir a proyectos innovadores que hagan una diferencia real.</p>
+        </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="projects" class="container col-12 text-center my-5">
+        <h2>Mis Proyectos</h2>
+        <!-- <div class="col-11"> -->
+        <div class="row d-flex justify-content-around">
+            <!-- Proyecto 1 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/project1.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Portafolio</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton1" type="button" data-toggle="collapse"
+                            data-target="#collapseContent1" aria-expanded="true" aria-controls="collapseContent1">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent1" class="collapse">
+                        <div class="card-body text-left">
+                            Calculadora web interactiva utilizando HTML, CSS, JavaScript y Bootstrap. La calculadora
+                            permite realizar operaciones aritméticas básicas,
+                            como suma, resta, multiplicación y división, y proporciona una interfaz de usuario clara y
+                            moderna.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/project2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commers</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton2" type="button" data-toggle="collapse"
+                            data-target="#collapseContent2" aria-expanded="true" aria-controls="collapseContent2">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent2" class="collapse">
+                        <div class="card-body text-left">
+                            Un sitio web de comercio electrónico completo con carrito de compras,
+                            procesamiento de pagos y gestión de productos. Diseñado para proporcionar una experiencia de
+                            compra fluida y segura.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/project3.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton3" type="button" data-toggle="collapse"
+                            data-target="#collapseContent3" aria-expanded="true" aria-controls="collapseContent3">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent3" class="collapse">
+                        <div class="card-body text-left">
+                            Calculadora web interactiva utilizando HTML, CSS, JavaScript y Bootstrap. La calculadora
+                            permite realizar operaciones aritméticas básicas,
+                            como suma, resta, multiplicación y división, y proporciona una interfaz de usuario clara y
+                            moderna.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/blog-portafolio.jpg" class="card-img-top" alt="Proyecto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton4" type="button" data-toggle="collapse"
+                            data-target="#collapseContent4" aria-expanded="true" aria-controls="collapseContent4">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent4" class="collapse">
+                        <div class="card-body text-left">
+                            La aplicación de blog es una plataforma interactiva diseñada para que los usuarios puedan
+                            crear, gestionar y compartir publicaciones de blog. Los artículos se organizan en categorías
+                            para facilitar la navegación, y los lectores pueden dejar comentarios para fomentar la
+                            interacción. Los administradores gestionan publicaciones, comentarios y categorías a través
+                            de una interfaz administrativa intuitiva.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/Sistema-de-reservas.png" class="card-img-top" alt="Proyecto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de reservas</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton5" type="button" data-toggle="collapse"
+                            data-target="#collapseContent5" aria-expanded="true" aria-controls="collapseContent5">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent5" class="collapse">
+                        <div class="card-body text-left">
+                            Sistema en línea para reservas de servicios con interfaces separadas para usuarios y
+                            administradores. Facilita la gestión de reservas, confirmaciones y cambios de manera
+                            eficiente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 6 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-43 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/dashboard.jpg" class="card-img-top" alt="Proyecto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Dashboard</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton6" type="button" data-toggle="collapse"
+                            data-target="#collapseContent6" aria-expanded="true" aria-controls="collapseContent6">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent6" class="collapse">
+                        <div class="card-body text-left">
+                            Un dashboard interactivo para la visualización de datos, con gráficos interactivos y filtros
+                            personalizados. Ideal para análisis y presentación de datos en tiempo real.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/gestor-tareas.png" class="card-img-top" alt="Proyecto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestor de tareas</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton7" type="button" data-toggle="collapse"
+                            data-target="#collapseContent7" aria-expanded="true" aria-controls="collapseContent7">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent7" class="collapse">
+                        <div class="card-body text-left">
+                            Una aplicación web para gestionar tareas diarias, con funcionalidades para crear, editar y
+                            eliminar tareas, así como para organizarlas en categorías. Incluye una interfaz intuitiva y
+                            opciones avanzadas de filtrado.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 8 -->
+            <div class="col-md-12 col-lg-5 col-xl-4 col-xxl-3 mb-4 mb-4">
+                <div class="card">
+                    <img src="./Assets/img/img-project/plataforma-cursos.png" class="card-img-top" alt="Proyecto 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Plataforma de cursos</h5>
+                        <!-- <p class="card-text">Descripción</p> -->
+                        <button class="btn btn-primary" id="toggleButton8" type="button" data-toggle="collapse"
+                            data-target="#collapseContent8" aria-expanded="true" aria-controls="collapseContent8">
+                            Ver más
+                        </button>
+                    </div>
+                    <div id="collapseContent8" class="collapse">
+                        <div class="card-body text-left">
+                            La Plataforma de Aprendizaje en Línea es una aplicación web destinada a ofrecer cursos y
+                            materiales educativos en diversos temas. Los usuarios pueden inscribirse en cursos, seguir
+                            lecciones estructuradas, y realizar ejercicios prácticos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="container col-12 text-center my-5">
+        <h2>Contacto</h2>
+        <div class="row justify-content-center">
+            <form class="col-11">
+                <div class="form-group text-left">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group text-left">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group text-left">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary col-12 mb-4 mt-4">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Jonathan Novoa. Todos los derechos reservados.</p>
+        <div>
+            <a href="./index.html"><img class="icons-Redes" src="./Assets/img/icons/url.png"
+                    alt="pagina de mi portafolio"></a>
+            <a href="./index.html"><img class="icons-Redes" src="./Assets/img/icons/x.png"
+                    alt="pagina de mi portafolio"></a>
+            <a href="./index.html"><img class="icons-Redes" src="./Assets/img/icons/linkedin.png"
+                    alt="pagina de mi portafolio"></a>
+            <a href="./index.html"><img class="icons-Redes" src="./Assets/img/icons/facebook.png"
+                    alt="pagina de mi portafolio"></a>
+        </div>
+    </footer>
+
+    <script src="./Assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
