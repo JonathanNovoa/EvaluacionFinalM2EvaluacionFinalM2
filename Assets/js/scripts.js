@@ -1,52 +1,4 @@
-// scripts.js
-
-// Añadir un desplazamiento suave a los enlaces de la barra de navegación
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    // var toggleButton = document.getElementById("toggleButton1");
-    // var collapseContent = document.getElementById("collapseContent1");
-    // console.log(toggleButton.textContent);
-    // if(toggleButton.textContent === "Ver más"){
-    //     console.log("Son iguales");
-    // }
-         // Espera a que el DOM esté completamente cargado
-
-            // Selecciona todos los botones
-            var botones = document.querySelectorAll('button');
-            
-            // Añade un manejador de eventos a cada botón
-            botones.forEach(function(boton) {
-                boton.addEventListener('click', function(event) {
-                    // Obtén el ID del botón clicado
-                    // var botonId = event.target.botonId;
-                    var toggleButton = document.getElementById(event.target.botonId);
-                    // Muestra el ID en la consola
-                    console.log("ID del botón clicado:", toggleButton);
-                });
-                //Añade un evento de escucha al evento de colapso
-        $(collapseContent).on('show.bs.collapse', function () {
-            toggleButton.setAttribute('aria-expanded', 'true');
-            toggleButton.textContent = 'Ver menos';
-        });
-        
-        $(collapseContent).on('hide.bs.collapse', function () {
-            toggleButton.setAttribute('aria-expanded', 'false');
-            toggleButton.textContent = 'Ver más';
-        });
-            });
-     
-    });
-
-    // Version 1
+    // Version 1 Texto escrito en pantalla
     // function escribirEnPantalla(texto){
     //     let arr=texto.split("");
     //     i=0;
@@ -66,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     //       }
     //     },150); 
     //   }
-      
+
     //   escribirEnPantalla("< Hola, soy Jonathan Novoa />");
 
-    // Version 2
+    // Version 2 Texto escrito en pantalla
     function escribirEnPantalla(texto) {
-        let arr = texto.split("");
+        let arr = texto.split("");//Dividir una cadena de texto en arreglo de caracteres individuales
         let i = 0;
         let intervalo = setInterval(function() {
             if (i < arr.length) {
@@ -84,3 +36,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     escribirEnPantalla("<Hola, soy Jonathan Novoa/>");
+
+    //
+    const formEnvioDatos = document.getElementById("formEnvioDatos");
+
+    // formEnvioDatos.addEventListener("submit", function (event) {
+    //     event.preventDefault();
+    
+        function formularioEnvio (){
+        const nombre = document.getElementById("name").value;
+        const correo = document.getElementById("email").value;
+        const mensaje = document.getElementById("message").value;
+        const btn = document.getElementById("btnForm");
+        const msn = document.getElementById("mensajeForm");
+        
+        if (nombre == "" || correo == "" || mensaje == "") {
+            msn.innerText = `Por favor, ingrese todos los datos de contacto.`;
+            btn.style.backgroundColor = "#FF0000";
+        }else{
+            msn.innerText = `Gracias por contactarse con nosotros, ${nombre}.`;
+            btn.style.backgroundColor = "#11e956";
+            formEnvioDatos.reset();
+        }
+        
+        console.log(nombre,correo,mensaje)
+
+    }
+// });

@@ -216,3 +216,22 @@ form .form-control::placeholder {
         /* Mueve la imagen fuera de la vista por la derecha */
     }
 }
+
+.navbar-toggler-icon{
+    background-image: url(/Assets/img/icons/icons8-menú.svg);
+
+}
+.contenidoPortada{
+    overflow:visible;
+}
+@media (max-width: 992px) {
+    .contenidoPortada {
+        display: none;
+    }
+    .imgPortada{
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+
+}
