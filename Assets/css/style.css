@@ -86,28 +86,29 @@ h2 {
 /* .navbar {
     background-color: green;
     /* Color de fondo de la barra de navegación */
-/* } */ 
-.nav-item{
+/* } */
+.nav-item {
     margin: 0px 5px 0px 5px;
 }
 
- .navbar-brand{
+.navbar-brand {
     height: 100%;
- }
+}
 
 .navbar .nav-link {
     /* text-align: center; */
-    color: #f8f9fa; 
-    background-color:#0404e8;
+    color: #f8f9fa;
+    background-color: #0404e8;
     padding: 10px;
     border: 2px;
     border-radius: 10px;
     /* Color del texto en la barra de navegación */
- } 
+}
 
 
 .nav-link:hover {
-    color: white;    /* Color del texto al pasar el mouse */
+    color: white;
+    /* Color del texto al pasar el mouse */
     background: linear-gradient(to bottom right, #1c1c3c, blue);
     /* border: 3px; */
     border-radius: 10px;
@@ -134,10 +135,10 @@ h2 {
 
 .card-img-top {
     height: 200px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
     transform: scale(1.01);
     object-fit: fill;
 }
@@ -175,12 +176,6 @@ form .form-control::placeholder {
     transform: scale(1.5);
 }
 
-/* .imgPortada {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-} */
-
 /* Estilo del contenedor */
 .containerImg {
     overflow: hidden;
@@ -192,10 +187,7 @@ form .form-control::placeholder {
     height: 100%;
     /* Altura del contenedor, ajusta según sea necesario */
 }
-/* .containerJ{
-    display: flex;
-    justify-content:space-around;
-} */
+
 /* Estilo de la imagen en movimiento */
 .imgPortada {
     height: 80vh;
@@ -217,21 +209,23 @@ form .form-control::placeholder {
     }
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url(/Assets/img/icons/icons8-menú.svg);
 
 }
-.contenidoPortada{
-    overflow:visible;
+
+.contenidoPortada {
+    overflow: visible;
 }
+
 @media (max-width: 992px) {
     .contenidoPortada {
         display: none;
     }
-    .imgPortada{
+
+    .imgPortada {
         display: none;
     }
 }
-@media (max-width: 992px) {
 
-}
+@media (max-width: 992px) {}
