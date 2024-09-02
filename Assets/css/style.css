@@ -203,7 +203,7 @@ form .form-control::placeholder {
     overflow: visible;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .contenidoPortada {
         display: none;
     }
@@ -215,7 +215,7 @@ form .form-control::placeholder {
     .containerImg {
         display: none;
     }
-}
+} */
 
 @media (max-width:1200px) {
     .containerImg {
