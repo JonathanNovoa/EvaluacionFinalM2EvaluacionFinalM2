@@ -1,5 +1,12 @@
 /* Estilos personalizados */
+:root {
+    --tituloLetra: 'Courier New', Courier, monospace;
+}
 
+/* body {
+    color: var(--tituloLetra);
+    background-color: var(--background-color);
+} */
 body {
     padding: 20px 0 20px 0;
     /*Espacio para la barra de navegación y el footer*/
@@ -87,6 +94,8 @@ h2 {
     padding: 10px;
     border: 2px;
     border-radius: 10px;
+    font-family: var(--tituloLetra);
+    font-weight: bolder;
     /* Color del texto en la barra de navegación */
 }
 
@@ -227,4 +236,26 @@ form .form-control::placeholder {
     .contenidoPortada {
         display: none;
     }
+}
+
+.icons-Tecn {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.icons-Tecn:hover {
+    transform: scale(1.8);
+}
+
+.containerTecn {
+    background-color: #1c1c3c;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: var(--tituloLetra);
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
