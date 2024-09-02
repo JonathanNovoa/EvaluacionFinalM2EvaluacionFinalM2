@@ -19,18 +19,6 @@ header {
     /* Color del texto en el encabezado */
 }
 
-/* Estilo del contenedor */
-.typewriter {
-    font-family: 'Courier New', Courier, monospace;
-    /* Fuente tipo máquina de escribir */
-    display: inline-block;
-    position: relative;
-    white-space: nowrap;
-    /* Evita el salto de línea automático */
-    overflow: hidden;
-    /* Oculta el texto que desborda el contenedor */
-}
-
 /* Estilo del texto */
 .text {
     color: transparent;
@@ -70,6 +58,7 @@ header {
 #titulo {
     /* color: #149414; */
     color: #11e956;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
@@ -83,10 +72,6 @@ h2 {
     /* Color del texto en el jumbotron */
 }
 
-/* .navbar {
-    background-color: green;
-    /* Color de fondo de la barra de navegación */
-/* } */
 .nav-item {
     margin: 0px 5px 0px 5px;
 }
@@ -226,6 +211,20 @@ form .form-control::placeholder {
     .imgPortada {
         display: none;
     }
+
+    .containerImg {
+        display: none;
+    }
 }
 
-@media (max-width: 992px) {}
+@media (max-width:1200px) {
+    .containerImg {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .contenidoPortada {
+        display: none;
+    }
+}
