@@ -263,8 +263,11 @@ h2 {
 .front{
     border: 2px solid white;
     margin: 1px;
+    padding: 20px 0 20px 0;
 }
 
 .back{
     border: 2px solid white;
+    margin: 1px;
+    padding: 20px 0 20px 0;
 }
